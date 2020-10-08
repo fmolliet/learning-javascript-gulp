@@ -1,0 +1,1 @@
+"use strict";var name="Guy Fieri",place="Flavortown";console.log("Hello ".concat(name,", ready for ").concat(place,"?"));
