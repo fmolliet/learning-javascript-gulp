@@ -1,8 +1,10 @@
+// https://babeljs.io/docs/en/6.26.3/babelrc
+// https://babeljs.io/docs/en/6.26.3/babel-preset-env#how-it-works
 {
     "presets": [
         ["@babel/preset-env", {
             "targets": {
-                "browsers": [
+                "browsers": [ // https://github.com/browserslist/browserslist
                     "last 2 versions",
                     "> 1%",
                     "IE 10"],

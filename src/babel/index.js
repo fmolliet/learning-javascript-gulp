@@ -1,4 +1,4 @@
-import "babel-polyfill";
+import "babel-polyfill"; // https://babeljs.io/docs/en/babel-polyfill
 
 const name = "Guy Fieri";
 const place = "Flavortown";
