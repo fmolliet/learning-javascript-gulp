@@ -1,8 +1,8 @@
 const { series, parallel, src, dest } = require('gulp');
-// Para TS
+// Dependencias Para TS
 const { createProject } = require('gulp-typescript');
-const tsProject = createProject('tsconfig.json');
-// Para ES6 
+const tsProject = createProject('tsconfig.json'); // npx tsc --init 
+// Dependencias Para ES6 
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 
@@ -45,14 +45,14 @@ exports.compile = series(
   ),
   parallel(cssMinify, jsMinify)
 );
-
+// Compilação para type
 exports.typescript = function() {
   var tsResult = src("src/**/*.ts") 
       .pipe(tsProject());
 
   return tsResult.js.pipe(dest('release'));
 }
-
+// Compilação para ES6
 exports.babel = function() {
   return src('src/*.js')
     .pipe(babel())
