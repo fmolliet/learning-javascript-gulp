@@ -1,0 +1,14 @@
+@import
+    'plugin/global';
+
+@mixin font(){
+    font-family: 'Roboto' sans-serif;
+}
+
+main {
+    display: flex;
+    & > div { 
+        @include font();
+        display: flex;
+    }
+}
