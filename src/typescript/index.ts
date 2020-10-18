@@ -1,3 +1,3 @@
-export default function( input : string):string{
-    return input;
-}
+import { sayHello } from "./greet";
+
+console.log(sayHello("TypeScript"));
